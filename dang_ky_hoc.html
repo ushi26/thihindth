@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--bộ ký tự Tiếng Việt-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--thiết lập chế độ xem cho thiết bị di động-->
+
+    <title>Đăng Ký</title> <!--tiêu đề của trang web-->
+
+    <meta name="keywords" content="Đăng ký Nhập Học, Arena Multimedia, thiết kế đồ họa, học thiết kế, học đồ họa, học 3D"> 
+    <!--từ khóa liên quan đến nội dung của trang web-->
+
+    <meta name="description" content="Arena Multimedia - Nơi đào tạo thiết kế đồ họa hàng đầu tại Việt Nam. Học thiết kế, học đồ họa, học 3D với chương trình chất lượng.">
+    <!--mô tả ngắn gọn về nội dung của trang web-->
+
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="icon" href="image/site-icon.png" type="image/x-icon" = > <!--biểu tượng trang web hiển thị trên tab trình duyệt-->
+    <link rel="apple-touch-icon" href="image/site-icon.png"> <!--biểu tượng trang web hiển thị trên thiết bị di động-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--kết nối trước với Google Fonts để tải phông chữ nhanh hơn-->
+
+</head>
+<body class="box-center">
+
+    <div class = "header">
+      <div class = "navbar" alt= "menu">
+         <div class = "col-12"> 
+
+              <nav> 
+                <ul>
+                    <li style = "margin-right: auto" ><a href="index.html" style = "background-color: #fffff8 !important; padding: 0 !important;" ><img src="Image/site-icon.png" alt="Arena Multimedia Logo"></a></li>
+                    <li><a href="index.html">GIỚI THIỆU</a>     
+                      <ul class = "dropdown">
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="Arena_Multimedia">Tại sao chọn Arena Multimedia?</a></li>
+                        <li><a href="co_so_vat_chat.html">Cơ Sở Vật Chất</a></li>
+                        <li><a href="hoi_dap.html">Hỏi & Đáp</a></li>
+                      </ul>
+                    </li>    
+                    <li><a href="tuyen_sinh.html">TUYỂN SINH</a>
+                        <ul class = "dropdown">
+                            <li><a href="truong_trinh_dao_tao.html">Trương Trình Đào Tạo</a></li>
+                            <li><a href="tuyen_sinh.html">Thông Tin Tuyển Sinh</a></li>
+                            <li><a href="hoc_phi.html">Học Phí</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="lien thong.html">LIÊN THÔNG - VIỆC LÀM</a>
+                        <ul class = "dropdown">
+                            <li><a href="lien_thong.html">Đối Tác Liên Thông</a></li>
+                            <li><a href="tuyen_dung.html">Hỗ Trợ Tuyển Dụng</a></li>
+                            <li><a href="nghe_nghiep.html">Nghề Nghiệp</a></li>
+                            <li><a href="tin_tuyen_dung.html">Tin Tuyển Dụng</a></li>
+                          </ul>
+                    
+                    </li>
+                    <li><a href="lien_he.html">LIÊN HỆ</a></li>
+                    <li><a href = "dang_ky_hoc.html" style = "vertical-align: middle;" class="btn" ">ĐĂNG KÝ</a></li>
+                </ul>
+              </nav>
+         </div>
+      </div>    
+
+    </div>
+    
+    <div class= "header">
+      <div class="col-12 color-yellow">
+        <div class="row color-yellow" style = "margin-top: 100px; margin-bottom: 62px;" >
+          <div class="col-6 form box-center">
+            <form action = "#" class = "bg-primary"> <!--form đăng ký học-->
+              <h1 class="text-center dark-yellow">ĐĂNG KÝ NHẬP HỌC</h1> <!--tiêu đề form-->
+              <label for="name">Họ và tên:</label> <!--tiêu đề code-->
+              <input type="text" id="hoten" name="hoten" required placeholder="Nhập họ và tên" class = "form-control">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Nhập email" class = "form-control">
+              <label for="phone">Số điện thoại:</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại" class = "form-control">
+              <label for="gioi_tinh">Giới tính : </label> &nbsp; <!--lệnh cách-->
+              <input type="radio" name="gioi_tinh" value="Nam"> Nam
+              <input type="radio" name="gioi_tinh" value="Nữ"> Nữ
+              <input type="radio" name="gioi_tinh" value="Khác"> Khác
+              <label for="trinh_do_hoc_van">Trình độ học vấn:</label>
+              <select id="trinh_do_hoc_van" name="trinh_do_hoc_van" class = "form-control">
+                  <option
+                  <option value="THPT">Tốt nghiệp Trung học phổ thông</option>
+                  <option value="Cao dang">Cao đẳng</option>
+                  <option value="Dai hoc">Đại học</option>
+                  <option value="khac">Khác</option>
+              </select>
+              <label for ="chon_dia_diem">Chọn địa điểm học:</label>
+              <select id="chon_dia_diem" name="chon_dia_diem" class = "form-control">
+                  <option
+                  <option value="Hanoi">Hà Nội</option>
+                  <option value="HCM">Hồ Chí Minh</option>
+                  <option value="Da Nang">Đà Nẵng</option>
+                  <option value="Can Tho">Cần Thơ</option>
+              </select>
+              <label for="khoa_hoc">Chọn khóa học:</label>
+              <select id="khoa_hoc" name="khoa_hoc" class = "form-control">
+                  <option value="">--Chọn khóa học--</option>
+                  <option value="Thiet ke do hoa">Thiết kế đồ họa</option>
+                  <option value="Thiet ke web">Thiết kế web</option>
+                  <option value="Thiet ke 3D">Thiết kế 3D</option>
+                  <option value="Phim hoat hinh">Phim hoạt hình</option>
+              </select>
+
+                &nbsp; <!--lệnh cách-->
+                &nbsp; <!--lệnh cách-->
+              <br>
+               &nbsp; <!--lệnh cách-->
+               &nbsp; <!--lệnh cách-->
+              <input type="submit" value="ĐĂNG KÝ" class = "btn-outline box-center">
+            </form>
+      </div>
+    </div>
+
+    <div class = "bg-footer">
+      <div class="row bg-footer">
+        <div class="col-12 bg-footer bottom-line">
+          <h1>HỆ THỐNG ĐÀO TẠO MỸ THUẬT ARENA MULTIMEDIA</h1>
+        </div>
+        <div class="col-3">
+          <h2>TP.HCM</h2>
+        </div>
+      </div>
+  
+      <div class="row" style = " margin-top: -32px;">
+        <div class="col-3">
+          <h3>Arena Nguyễn Đình Chiểu</h3>
+          <p>212-214 Nguyễn Đình Chiểu, Phường Xuân Hoà</p>
+          <p>Tel: 1800 1525</p>
+          <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Hồ Văn Huê</h3>
+          <p>43R/12 Hồ Văn Huê, Phường Đức Nhuận</P>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Tân Bình</h3>
+          <p>Số 6 Tân Kỳ Tân Quý (gần Etown), Phường Tân Bình</p>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Phú Lâm</h3>
+          <p>136 Lê Tuấn Mậu (CV Phú Lâm), Phường Phú Lâm</p>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+      </div>
+  
+      <div class = "col-12">
+        <h2>Hà Nội</h2>
+      </div>
+  
+      <div class = "row">
+  
+      <div class="row" style = " margin-top: -32px;">
+        <div class="col-3">
+          <h3>Arena Đống Đa</h3>
+          <p>39-41 Vũ Ngọc Phan, Phường Láng</p>
+          <p>Tel: 1800 1525</p>
+          <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Cầu Giấy</h3>
+          <p>D29 Phạm Văn Bạch, Phường Cầu Giấy</p>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Hà Đông</h3>
+          <p>110 Trần Phú, Phường Hà Đông</p>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Long Biên</h3>
+          <p>564 Nguyễn Văn Cừ, Phường Bồ Đề</p>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-12 bottom-line">
+          &nbsp; <!--dùng để tạo khoảng trắng-->
+      </div>
+  
+      <div class="row" style = "margin-top: -32px;">
+        <div class="col-12">
+          <h2>© 2020, ARENA MULTIMEDIA</h2>
+        </div>
+      </div>
+  
+  </div>
+    
+  
+  
+  
+  
+  
+  </body>
+  </html>
+    

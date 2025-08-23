@@ -1,0 +1,604 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dongle&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*font*/
+body
+{
+    /* font-family = kiểu chữ */
+    /* font-size = kích thước chữ */
+    /* line-height = khoảng cách giữa các dòng */
+    /* color = màu chữ */
+    /* background-color = màu nền */
+
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:#626262;
+    margin: 0;
+    line-height: 1.5; /* khoảng cách giữa các dòng */
+}
+h1, h2, h3
+{
+    /* font-family = kiểu chữ */
+    /* font-weight = độ đậm của chữ */
+    /* margin = khoảng cách giữa các phần tử */
+
+    font-family: 'Dongle', sans-serif;
+    font-weight: 700;
+    color:#2c2c2c
+}
+
+h4,h5,h6
+{
+    /* font-family = kiểu chữ */
+    /* font-weight = độ đậm của chữ */
+    /* margin = khoảng cách giữa các phần tử */
+
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+}
+
+h1 /*font tiêu đề*/
+{
+    /* font-size = kích thước chữ */
+    /* margin = khoảng cách giữa các phần tử */
+
+    font-size: 48px;
+    margin: 0;
+}
+
+h2 /*font tiêu đề*/
+{
+    /* font-size = kích thước chữ */
+    /* margin = khoảng cách giữa các phần tử */
+
+    font-size: 36px;
+    margin: 0;
+    line-height: 0.8; 
+
+}
+h3 /*font tiêu đề nội dung*/
+{
+    /* font-size = kích thước chữ */
+    /* margin = khoảng cách giữa các phần tử */
+
+    font-size: 24px;
+    margin: 0;
+}
+
+h4 /*font tiêu đề nhỏ*/
+{
+    /* font-size = kích thước chữ */
+    /* margin = khoảng cách giữa các phần tử */
+
+    font-size: 20px;
+    margin: 0;
+}
+h5 /*font tiêu đề nhỏ hơn*/
+{
+    /* font-size = kích thước chữ */
+    /* margin = khoảng cách giữa các phần tử */
+
+    font-size: 18px;
+    margin: 0;
+}
+
+h6 /*font tiêu đề form*/
+{
+    /* font-size = kích thước chữ */
+    /* margin = khoảng cách giữa các phần tử */
+
+    font-size: 16px;
+    margin: 0;
+}
+
+p
+{
+    /* font-size = kích thước chữ */
+    /* line-height = khoảng cách giữa các dòng */
+    /* margin = khoảng cách giữa các phần tử */
+
+    font-size: 16px;
+    margin: 0;
+}
+
+a
+{
+    /* text-decoration = kiểu gạch chân của chữ */
+    /* color = màu chữ */
+    /* font-weight = độ đậm của chữ */
+
+    text-decoration: none;
+    color: rgb(227, 174, 0);
+    font-weight: 700;
+    font-family: baloo 2, sans-serif;
+}
+
+a:hover
+{
+    /* text-decoration = kiểu gạch chân của chữ */
+    /* color = màu chữ */
+
+    text-decoration: underline;
+    color: rgb(227, 174, 0);
+}
+
+
+/*box*/
+*{box-sizing: border-box;} /*yêu cầu tất cả các box*/
+.col-1{ width: 8.33%}
+.col-2{ width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+
+
+/* bố cục chính*/
+[class*="col-"] {
+    /* border = kiểu viền */
+    /* padding = khoảng cách giữa viền và nội dung */
+    /* margin = khoảng cách giữa các phần tử */
+    /* width = chiều rộng của phần tử */
+    /* height = chiều cao của phần tử */
+
+    border: none;
+    padding: 12px;
+}
+
+.row
+{
+    /* display = kiểu hiển thị */
+    /* flex = hiển thị theo kiểu flexbox */
+    /* flex-wrap = cho phép các phần tử con xuống dòng nếu không đủ chỗ */
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container
+{
+    /* max-width = chiều rộng tối đa của phần tử */
+    /* margin = khoảng cách giữa các phần tử */
+    /* padding = khoảng cách giữa viền và nội dung */
+
+    max-width: 80%;
+    margin: 0 auto; /* căn giữa */
+    cursor:default; /* kiểu con trỏ mặc định */
+
+}
+
+.header
+{
+    max-width: 100%;   
+    margin:0;
+}
+
+.video-100
+{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Giữ đúng tỉ lệ màn hình */
+    border-radius: 16px;   /* bo góc */
+    overflow: hidden;      /* để bo góc ăn vào video */
+}
+
+.video-100 iframe 
+{
+    position: absolute; /* đặt iframe vào vị trí tuyệt đối */
+    top: 0;
+    left: 0;
+    width: 100%; /* chiếm toàn bộ khung */
+    height: 100%; /* chiếm toàn bộ khung */
+    border: 0; /* không viền */
+}
+
+.img-100
+{
+    /* width = chiều rộng của phần tử */
+    /* height = chiều cao của phần tử */
+
+    width: 100%;
+    height: auto;
+}
+
+.img
+{
+  position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Giữ đúng tỉ lệ màn hình */
+    border-radius: 16px;   /* bo góc */
+    overflow: hidden;      /* để bo góc ăn vào video */
+}
+
+.img-news
+{
+    /* width = chiều rộng của phần tử */
+    /* height = chiều cao của phần tử */
+    /* border-radius = bo tròn góc của phần tử */
+    position: relative; /* đặt phần tử vào vị trí tương đối */
+    width: 100%;
+    border-radius: 16px;   /* bo góc */
+    overflow: hidden;      /* để bo góc ăn vào video */
+}
+
+.img-news :hover
+{
+    /* transform = hiệu ứng khi di chuột qua */
+    /* transition = thời gian chuyển đổi hiệu ứng */
+
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+
+/*color*/
+.bg-footer
+{
+    /* background-color = màu nền */
+    /* color = màu chữ */
+    /* padding = khoảng cách giữa viền và nội dung */
+    /* text-align = căn chỉnh chữ */
+
+    background-color: #d1d1d1;
+    text-align: top; /* căn giữa chữ */ 
+    display: flex; /* corrected display property */
+    justify-content: flex-start; /* căn trái theo ngang */
+    align-items: flex-start; /* căn trái theo dọc */
+    flex-wrap: wrap; /* cho phép các phần tử con xuống dòng nếu không đủ chỗ */
+    gap: 16px; /* khoảng cách đều giữa các mục */
+    margin: 0;
+}
+
+.bg-primary 
+{
+    background-color: #fffff8;
+}
+
+.bg-gradient
+{
+
+    background-image: radial-gradient( circle 708px at 0% 3.4%,  rgba(254,216,7,1) 14.5%, rgba(249,69,28,1) 71.8% );    }
+
+.color-yellow
+{
+    background-color: #ffff2d;
+}
+
+.color-red
+{
+    background-color: #ff0000;
+}
+
+.yellow
+{
+    color:#ffff2d
+}
+
+.white
+{
+    color:#fffff8
+}
+
+.dark-yellow
+{
+    color:rgb(227, 174, 0)
+}
+
+.red
+{
+    color:#ff0000
+}
+
+.box-shadow
+{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-line
+{
+    /* border-bottom = đường viền dưới */
+    /* padding-bottom = khoảng cách giữa viền dưới và nội dung */
+
+    border-bottom: 2px ridge #7777;
+    margin-bottom: 48px;
+}
+
+.box-center
+{
+    /* display = kiểu hiển thị */
+    /* justify-content = căn chỉnh các phần tử con theo chiều ngang */
+    /* align-items = căn chỉnh các phần tử con theo chiều dọc */
+    /* text-align = căn chỉnh chữ */
+
+    display: flex;
+    justify-content: center; /* căn giữa theo ngang */
+    align-items: center; /* căn giữa theo dọc */
+    margin: 0 auto; /* căn giữa */
+}
+
+
+
+
+
+
+/*text*/
+
+.item-ceter
+{
+    /* display = kiểu hiển thị */
+    /* justify-content = căn chỉnh các phần tử con theo chiều ngang */
+    /* align-items = căn chỉnh các phần tử con theo chiều dọc */
+    /* text-align = căn chỉnh chữ */
+
+    display: flex;
+    justify-content: center; /* căn giữa theo ngang */
+    align-items: center; /* căn giữa theo dọc */
+    text-align: center;
+}
+
+.text-center
+{
+    /* text-align = căn chỉnh chữ */
+    text-align: center;
+}
+
+.text-left
+{
+    text-align: left;
+}
+
+.text-right
+{
+    text-align: right;
+}
+
+
+
+/*navbar*/
+
+ 
+
+.navbar
+{
+    position: fixed; /* cố định vị trí */
+    margin-top: 0; /* cách mép trên */
+    top: 0; /* bám mép trên */
+    background-color: rgba(255, 255, 255, 0.748) ; /* màu nền trong suốt */
+    backdrop-filter: blur(10px); /* làm mờ nền */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* bóng đổ nhẹ */
+    z-index: 1000; /* nổi lên trên các phần tử khác */
+    width: 100%; /* chiếm toàn bộ chiều rộng */
+
+}
+
+.navbar ul
+{
+  display: flex;              /* cho các <li> nằm ngang */
+  justify-content: flex-end; /* giãn cách đều */
+  list-style: none;           /* bỏ dấu chấm tròn */
+  margin: 0;
+  padding: 0;
+  overflow: visible; /* cho phép các phần tử con xuống dòng nếu không đủ chỗ */
+}
+.navbar ul li
+{
+   flex: right;
+   white-space: nowrap; /* không cho phép xuống dòng */
+   position: relative; /* cha làm mốc cho dropdown */
+   white-space: nowrap; /* không xuống dòng */
+}
+.navbar ul li a
+{
+    /* text-decoration = kiểu gạch chân của chữ */
+    /* color = màu chữ */
+    /* padding = khoảng cách giữa viền và nội dung */
+    /* font-weight = độ đậm của chữ */
+    /* text-align = căn chỉnh chữ */
+    /* margin = khoảng cách giữa các phần tử */
+    /* position = vị trí của phần tử */
+    position: relative;
+
+    margin: 0 px;
+    display: block;
+    text-decoration: none;
+    color: #232323c8;
+    padding: 18px 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.navbar ul li a:hover
+{
+    /* background-color = màu nền khi di chuột qua */
+    /* color = màu chữ khi di chuột qua */
+    position: relative; /* cha làm mốc */
+    border-radius: 24px;
+    background-color: #ffff2d;
+    color: #000;
+}
+
+.navbar ul li img /*logo*/
+{
+    /* width = chiều rộng của phần tử */
+    /* height = chiều cao của phần tử */
+    /* margin = khoảng cách giữa các phần tử */
+
+    width: 120px ;
+    height: auto;
+}
+
+.navbar ul li a img:hover
+{
+    /* transform = hiệu ứng khi di chuột qua */
+    /* transition = thời gian chuyển đổi hiệu ứng */
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.dropdown{
+
+    display:none; position:absolute; top:100%; left:0;
+    background:#fffff8; list-style:none; min-width:160px;
+    margin:0; padding:8px 0;           /* reset để khỏi lệch */
+    border:1px solid #eee; box-shadow:0 8px 20px rgba(0,0,0,.08);
+    z-index:1000;                      /* nổi lên trên */
+  }
+  nav ul li:hover > .dropdown{ display:block; }
+  
+  /* Item trong dropdown */
+  .dropdown li a{
+    display:block; padding:10px 14px; text-decoration:none;
+    color:#232323c8; white-space:nowrap; /* không xuống dòng */
+  }
+  .dropdown li a:hover{ background:#f3f3f3; }
+
+/* Ẩn dropdown mặc định */
+.navbar ul li .dropdown {
+    transform: translateY(-10px); /* ban đầu hơi nhích lên */
+    transition: all 0.3s ease;    /* hiệu ứng mượt */
+    position: absolute;
+    top: 100%;   /* ngay dưới nút cha */
+    left: 0;     /* bám mép trái nút cha */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease
+  }
+  
+  /* Chỉ hiện khi hover vào li cha */
+.navbar ul li:hover > .dropdown 
+{
+    transform: translateY(0); /* trở về vị trí ban đầu */
+    display: block;
+    opacity: 1;
+  visibility: visible;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #232323c8;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+}
+
+.dropdown li a:hover {
+    background: #f3f3f3;
+}
+
+.navbar ul li ul.dropdown li a {
+    text-align: left;
+}
+
+/*form*/
+
+.form 
+{ 
+    padding: 8px; 
+    margin-bottom: 16px; 
+    border: 48px solid #fffff8; 
+    border-radius: 16px; 
+    font-size: 16px; 
+    width: 50%;
+    background-color: #fffff8;
+}
+
+.form-control {
+    width: 100%; /* Chiều rộng 100% */
+    padding: 8px; /* Khoảng cách trong input */
+    border: 1px solid #ddd; /* Viền input */
+    border-radius: 40px; /* Bo tròn góc input */
+    font-size: 16px; /* Kích thước chữ trong input */
+    margin-top: 10px; /* Khoảng cách dưới của input */
+
+}
+
+.label {
+    margin-left: 4px; margin-bottom: 16px; margin-top: 6px;
+    display: inline-block; /* Hiển thị chữ */
+}
+
+/*button*/
+.btn
+{
+    /* background-color = màu nền của nút */
+    /* color = màu chữ của nút */
+    /* padding = khoảng cách giữa viền và nội dung */
+    /* border = kiểu viền của nút */
+    /* border-radius = bo tròn góc của nút */
+    /* cursor = kiểu con trỏ khi di chuột qua */
+
+    background-color: #ffff2d;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+
+}
+
+.btn:hover
+{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline
+{
+    /* background-color = màu nền của nút */
+    /* color = màu chữ của nút */
+    /* padding = khoảng cách giữa viền và nội dung */
+    /* border = kiểu viền của nút */
+    /* border-radius = bo tròn góc của nút */
+    /* cursor = kiểu con trỏ khi di chuột qua */
+    background-color: transparent;
+    display: block;
+    outline-offset: 2px;
+    color: rgb(227, 174, 0);
+    padding: 5px 16px;
+    border: 2px solid rgb(227, 174, 0);
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.btn-outline:hover
+{
+    transition: transform 0.3s ease;
+    background-color: rgb(227, 174, 0);
+    color: #fffff8;
+}
+
+.card
+{
+    border: none;
+    border-radius: 24px;
+    cursor: col-resize;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.icon
+{
+    margin: auto;
+    align-items: center;
+    display: flex; 
+}

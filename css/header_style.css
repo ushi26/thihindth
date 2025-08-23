@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*header, menu, navbar*/
+
+/*navbar*/
+.navbar
+{
+    background-color: #ffffffc1;
+
+}
+
+.navbar ul
+{
+    position: relative; 
+}
+.navbar ul li
+{
+   flex: 1;
+}
+.navbar ul li a
+{
+    /* text-decoration = kiểu gạch chân của chữ */
+    /* color = màu chữ */
+    /* padding = khoảng cách giữa viền và nội dung */
+
+    margin: 0;
+    display: block;
+    text-decoration: none;
+    color: #232323c8;
+    padding: 10px 15px;
+}
+
+.navbar ul li a:hover
+{
+    /* background-color = màu nền khi di chuột qua */
+    /* color = màu chữ khi di chuột qua */
+
+    background-color: 'color-yellow';
+    color: #000;
+}
+
+.dropdown
+{
+    /* position = vị trí của phần tử */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:#fffff8;
+    list-style: none;
+    min-width: 160px;
+}
+.dropdown li
+{
+    /* background-color = màu nền của phần tử */
+    /* color = màu chữ của phần tử */
+    /* padding = khoảng cách giữa viền và nội dung */
+
+    background-color: #fffff8;
+    padding: 10px 15px;
+}
+.dropdown li a
+{
+    /* text-decoration = kiểu gạch chân của chữ */
+    /* color = màu chữ */
+    /* padding = khoảng cách giữa viền và nội dung */
+
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+}
+.dropdown li a:hover
+{
+    /* background-color = màu nền khi di chuột qua */
+    /* color = màu chữ khi di chuột qua */
+
+    background-color: #ffff2d;
+    color: #000;
+}
+.navbar-header ul li:hover .dropdown
+{
+    /* display = hiển thị phần tử */
+    display: block;
+}
