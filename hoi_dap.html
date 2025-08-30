@@ -21,76 +21,388 @@
 </head>
 <body>
 
-    <div class = "header">
-      <div class = "navbar" alt= "menu">
-         <div class = "col-12"> 
+  <div class = "header">
+    <div class = "navbar" alt= "menu">
+       <div class = "col-12"> 
 
-              <nav> 
-                <ul>
-                    <li style = "margin-right: auto" ><a href="index.html" style = "background-color: #fffff8 !important; padding: 0 !important;" ><img src="Image/site-icon.png" alt="Arena Multimedia Logo"></a></li>
-                    <li><a href="index.html">GIỚI THIỆU</a>     
+            <nav> 
+              <ul>
+                  <li style = "margin-right: auto" ><a href="index.html" style = "background-color: transparent !important; padding: 0 !important;"><img src="Image/site-icon.png";" alt="Arena Multimedia Logo"></a></li>
+                  <li><a href="index.html">GIỚI THIỆU</a>     
+                    <ul class = "dropdown">
+                      <li><a href="index.html">Trang Chủ</a></li>
+                      <li><a href="Arena_Multimedia.html">Tại sao chọn Arena Multimedia?</a></li>
+                      <li><a href="co_so_vat_chat.html">Cơ Sở Vật Chất</a></li>
+                      <li><a href="hoi_dap.html">Hỏi & Đáp</a></li>
+                    </ul>
+                  </li>    
+                  <li><a href="tuyen_sinh.html">TUYỂN SINH</a>
                       <ul class = "dropdown">
-                        <li><a href="index.html">Trang Chủ</a></li>
-                        <li><a href="Arena_Multimedia">Tại sao chọn Arena Multimedia?</a></li>
-                        <li><a href="co_so_vat_chat.html">Cơ Sở Vật Chất</a></li>
-                        <li><a href="hoi_dap.html">Hỏi & Đáp</a></li>
-                      </ul>
-                    </li>    
-                    <li><a href="tuyen_sinh.html">TUYỂN SINH</a>
-                        <ul class = "dropdown">
-                            <li><a href="truong_trinh_dao_tao.html">Trương Trình Đào Tạo</a></li>
-                            <li><a href="tuyen_sinh.html">Thông Tin Tuyển Sinh</a></li>
-                            <li><a href="hoc_phi.html">Học Phí</a></li>
-                          </ul>
-                    </li>
-                    <li><a href="lien thong.html">LIÊN THÔNG - VIỆC LÀM</a>
-                        <ul class = "dropdown">
-                            <li><a href="lien_thong.html">Đối Tác Liên Thông</a></li>
-                            <li><a href="tuyen_dung.html">Hỗ Trợ Tuyển Dụng</a></li>
-                            <li><a href="nghe_nghiep.html">Nghề Nghiệp</a></li>
-                            <li><a href="tin_tuyen_dung.html">Tin Tuyển Dụng</a></li>
-                          </ul>
-                    
-                    </li>
-                    <li><a href="lien_he.html">LIÊN HỆ</a></li>
-                    <li><a href = "dang_ky_hoc.html" style = "vertical-align: middle;" class="btn" ">ĐĂNG KÝ</a></li>
-                </ul>
-              </nav>
-         </div>
-      </div>   
-      
-      <table table border="0" width="80%" cellpadding="0" cellspacing="1" bgcolor="darkblue"> <!-- Bảng tiêu đề -->
-        <tr height="80" bgcolor="#FFCE00"> <!-- Dòng tiêu đề -->
-            <th>Thứ Hai</th> 
-             <th>Thứ Ba</th>
-             <th>Thứ Tứ</th>
-             <th>Thứ Năm</th>
-             <th>Thứ Sáu</th>
-             <th>Thứ Bảy</th>
-        </tr>
-        <tr align="center" bgcolor="#eee">
-            <td colspan="3"> 
-                <h6>Ms Minh Yến<br>0903 4445698<br>Facebook</h6>
-            </td>
-             <td> 
-                 <h6>Mr Hữu Tài<br>0903 6594698<br>Facebook</h6>
-            </td>
-            <td colspan="2"> 
-                <h6>Miss Thuỷ Tiên<br>08656594698<br>Facebook</h6>
-            </td>
-           </tr>
-         <tr align="center" height="3">
-            <td colspan="3" bgcolor="tomato"> 
-              
-            </td>
-             <td bgcolor="blue"> 
-               
-            </td>
-            <td colspan="2" bgcolor="green"> 
-             
-            </td>
-           </tr>
+                          <li><a href="truong_trinh_dao_tao.html">Trương Trình Đào Tạo</a></li>
+                          <li><a href="tuyen_sinh.html">Thông Tin Tuyển Sinh</a></li>
+                          <li><a href="hoc_phi.html">Học Phí</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="lien_thong.html">LIÊN THÔNG - VIỆC LÀM</a>
+                      <ul class = "dropdown">
+                          <li><a href="lien_thong.html">Đối Tác Liên Thông</a></li>
+                                
+                          <li><a href="nghe_nghiep.html">Nghề Nghiệp</a></li>
+                         
+                        </ul>
+                  
+                  </li>
+                  <li><a href="lien_he.html">LIÊN HỆ</a></li>
+                  <li><a href = "dang_ky_hoc.html" style = "vertical-align: middle;" class="btn" ">ĐĂNG KÝ</a></li>
+              </ul>
+            </nav>
+       </div>
+    </div>    
+
+  </div>
+
+    <div style = "margin-top: 50px; padding: 24px">
+       <details>
+        <summary class= "detai"><h2>Mỹ thuật Đa phương tiện là gì? Tại sao gọi như vậy?</h2></summary>
+        <p>Mỹ thuật: Chương trình đào tạo các kỹ năng lý thuyết và thực hành, sử dụng máy tính trong thiết kế mỹ thuật liên quan đến:
+          <br>– Đồ họa (xử lý hình ảnh, thiết kế quảng cáo, chế bản điện tử);
+          <br>– Xử lý hậu kỳ âm thanh, video;
+          <br>– Hoạt hình (2 chiều và 3 chiều);
+          <br>– Xây dựng trò chơi (game) trên máy tính;
+          <br>– Thiết kế Web.
+          
+          <br>Đa phương tiện (Multimedia): Bộ môn tích hợp nhiều phương tiện truyền tải thông tin khác nhau được xử lý riêng biệt hoặc tích hợp lại, bao gồm:
+          <br>– Văn bản (Text);
+          <br>– Đồ họa (Graphics);
+          <br>– Hoạt hình (Animation);
+          <br>– Video;
+          <br>– Âm thanh (Sound).</p>
+       </details>
+
+       <details>
+        <summary class= "detai"><h2>Mỹ thuật Đa phương tiện được ứng dụng như thế nào trong lĩnh vực giải trí?</h2></summary>
+        <p>Khi ngành công nghiệp giải trí đi vào thế giới kỹ thuật số, điều đó đã tạo ra cơ hội việc làm rộng rãi hơn trong lĩnh vực ứng dụng Mỹ thuật Đa phương tiện. Phần lớn các sản phẩm kỹ thuật số (nội dung số: ảnh, video, phim, âm thanh, hoạt hình, ứng dụng web tương tác, clip ca nhạc,…) trước khi được đưa lên các kênh truyền thông đều được các chuyên gia thực hiện và sáng tạo bằng những thiết bị và phần mềm chuyên dụng.</p>
+       </details>
+
+       <details>
+        <summary class= "detai"><h2>Mỹ thuật Đa phương tiện có ích gì trong việc Thiết kế Sản phẩm hay không?</h2></summary>
+        <p>Học Mỹ thuật Đa phương tiện ngoài việc giúp bạn nâng cao thẩm mỹ, còn đào tạo các bạn về việc nghiên cứu thương hiệu, qua đó để thương hiệu tiếp cận khách hàng hiệu quả hơn. Ngoài những ấn phẩm quảng cáo truyền thông thì việc thiết kế bao bì, tem nhãn, và sản phẩm cũng là công việc ứng dụng của ngành Thiết kế Mỹ thuật Đa phương tiện.</p>
+       </details>
+
+
+       <details>
+        <summary class= "detai"><h2>Đào tạo Mỹ thuật Đa phương tiện là gì?</h2></summary>
+        <p>Đào tạo Mỹ thuật Đa phương tiện là một ngành đào tạo liên quan đến công nghệ và nghệ thuật, diễn tả một dạng đào tạo cơ bản về sử dụng phần mềm máy tính để thiết kế các sản phẩm, thiết kế quảng cáo, thiết kế website, sản xuất các nội dung số (games, phim, video, clip ca nhạc, CD học tập).</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Giáo dục giải trí là gì?</h2></summary>
+        <p>Giáo dục giải trí là một cuộc cách mạng về khái niệm mới trong học hành, nó là sự kết hợp giữa giáo dục và giải trí (Edutainment = Education + Entertainment).</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Hoạt hình là gì?</h2></summary>
+        <p>Hoạt hình là một từ có nguồn gốc từ một từ La-tinh “anima” có nghĩa là”linh hồn”, truyền sức sống vào các nhân vật, và nó đã trở nên ngày càng phổ biến trên tất cả các kênh giải trí và Truyền thông Đa phương tiện.        </p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Hỏi: Nghề Thiết kế Mỹ thuật Đa phương tiện – Multimedia Design có phải là nghề mang tính nhất thời không? Tất cả các nghề như ngân hàng, kế toán, luật sư,… đều có giai đoạn bão hòa nhân lực. Vậy thời điểm bão hòa nhân lực trong ngành Multimedia?</h2></summary>
+        <p>Đáp: Có 3 lý do để tin rằng nghề Thiết kế Mỹ thuật Đa phương tiện sẽ còn có nhu cầu cao trong 10 năm tới:
+
+          <br>– Với tham vọng của 2 gã khổng lồ Facebook và Google nhằm phủ sóng Internet đến tất cả các ngóc ngách của thế giới, việc tiếp cận của người dùng với các sản phẩm của Mỹ thuật Đa phương tiện trở nên dễ dàng và thương xuyên hơn như: Quảng cáo, Games; Ứng dụng tiện ích trên thiết bị di động trong cuộc sống như thương mại điện tử, đi lại, du lịch, giải trí; Các sản phẩm giải trí kỹ thuật số như Phim, Âm nhạc, Hoạt hình.
+          
+          <br>– Sự phổ biến của các thiết bị cầm tay (mobile devices) và giờ đây là các thiết bị đeo tay (wearables), sự tích hợp của các thiết bị với nhau như Internet TV cũng làm cho việc sở hữu thiết bị truy cập đầu cuối trở nên dễ dàng hơn bao giờ hết. Hầu hết các sinh viên hay người nông dân đã có thể sử dụng điện thoại thông minh màn hình lớn, kết nối 3G hay Wifi với chi phí chỉ khoảng 2-3 triệu VNĐ và chi phí kết nối khoảng 100.000 VNĐ/ tháng.
+          
+          <br>– Thế giới thương mại, kinh doanh và giải trí được thúc đẩy bởi “môi trường số” nhờ 2 lý do trên. Xu hướng hội nhập kinh tế khu vực và thế giới (TPP, ASEAN, WTO) cũng buộc các doanh nghiệp có định hướng thị trường rõ nét hơn, mạnh mẽ hơn và đầu tư nhiều hơn, chất lượng hơn cho truyền thông và quảng cáo cho sản phẩm, dịch vụ của mình. Các sáng tạo mới nhất có sức ảnh hưởng toàn cầu đều xuất phát từ lĩnh vực công nghệ thông tin và công nghệ truyền thông đa phương tiện, làm cho cuộc sống quanh ta bị chi phối một cách sâu rộng và theo chiều hướng tích cực.
+          
+          <br>Những lý do trên đây mang đến một nhu cầu khổng lồ về thiết kế các giao diện phục vụ mục đích Thương mại, Quảng cáo và Sản xuất các nội dung giải trí kỹ thuật số. Và đó chính là mảnh đất màu mỡ cho các Chuyên gia Thiết kế các sản phẩm của Mỹ thuật Đa phương tiện. Tuy nhiên mức độ đào thải của nghề cũng rất nhanh, khi công nghệ liên tục thay đổi, các thách thức nghề nghiệp liên tục thay đổi. Và Arena Multimedia Toàn cầu cũng đã chuẩn bị đón nhận các thách thức này cho 10 năm tiếp theo.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Tại Arena Multimedia, giảng viên được lựa chọn ra sao?</h2></summary>
+        <p>Các giảng viên của Arena Multimedia là những chuyên gia hàng đầu trong ngành công nghiệp truyền thông, quảng cáo, giải trí và lĩnh vực nghệ thuật, có kiến thức chuyên môn vững vàng, kỹ năng sư phạm và kinh nghiệm làm việc thực tế.
+
+          Các giảng viên được tuyển dụng khắt khe theo quy trình của Arena Multimedia Toàn cầu, phải vượt qua các bài kiểm tra chuyên môn mới được cấp phép giảng dạy. Học viên Arena tìm thấy trong các giảng viên hình ảnh người thầy, người đồng nghiệp đi trước, hàng ngày truyền cảm hứng, chia sẻ kinh nghiệm và định hướng nghề nghiệp. Một trong những động lực lớn nhất mà giảng viên có được tại Arena là họ được tiếp cận được một “bể” các nhân sự tương lai cùng ngành với mình có chất lượng, tiềm năng, nhiệt huyết và họ có thể chia sẻ các giá trị nghề nghiệp, niềm đam mê. Nhiều giảng viên đã có quan hệ nghề nghiệp với học viên ngay trong khoá học.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Bằng cấp của Arena Multimedia có giá trị như thế nào trong hệ thống giáo dục Đại học của Việt Nam? Có được thẩm định là đủ chất lượng để nộp vào cơ quan nhà nước không?</h2></summary>
+        <p>Arena Multimedia là thương hiệu nhượng quyền toàn cầu của tập đoàn Aptech (Ấn Độ). Bằng cấp của Arena Multimedia do tập đoàn Aptech cấp, gửi về Việt Nam.
+          <br>Bằng cấp này hiện nay được công nhận bởi các công ty quảng cáo, công ty thiết kế, sản xuất games, đài truyền hình của 20 quốc gia mà Arena Multimedia có sự hiện diện, đặc biệt được đánh giá cao khi làm việc tại các công ty đa quốc gia như Gameloft, Digital Works, Sparx*, Magnon, GlassEgg, …
+          <br>Bằng tốt nghiệp 2 năm có giá trị chuyển đổi và liên thông du học với một số trường Đại học tại Anh Quốc, Canada và Malaysia.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Vậy phương pháp đào tạo của Arena có điểm gì đặc biệt?</h2></summary>
+        <p>Về phương pháp đào tạo
+
+          <br>Mục tiêu của mô hình đào tạo Arena không phải là đào tạo các chuyên gia lý thuyết mà là các chuyên gia thực hành, được trang bị đầy đủ các kỹ năng để có thể làm việc được ngay. Ngoài các kỹ  năng sử dụng phần mềm học viên Arena còn được trang bị hệ thống  lý thuyết và phương pháp luận xuyên suốt, các nguyên tắc thiết kế, được rèn luyện tư duy và phẩm chất  nghề nghiệp nhờ đó học viên hiểu được thực chất những gì diễn ra phía sau các công cụ phần mềm và biết cách xây dựng các sản phẩm Mỹ thuật Đa phương tiện có chất lượng cao một cách sáng tạo và có phương pháp.
+          
+          <br>Cuối mỗi kỳ, sinh viên sẽ trưởng thành rất nhiều qua các dự án thực tế. Những dự án này đòi hỏi học viên phải huy động tất cả các kiến thức và kỹ năng tổng hợp đã được trang bị và rèn luyện trong kỳ. Việc làm Project cuối mỗi học kỳ và liên tục được tham gia các hoạt động cọ xát chuyên môn ngoài chương trình học chính khóa giúp học viên rèn luyện kỹ năng nhanh nhất.
+          
+          <br>Ngay từ kì học đầu tiên, các bạn học viên của Arena Multimedia đã được học và làm một bộ nhận diện thương hiệu với bộ sản phẩm văn phòng, bộ sản phẩm quảng cáo, bộ sản phẩm quà tặng cho một nhãn hàng, dịch vụ, công ty, tổ chức.
+          
+          <br><br>Học mà chơi, chơi mà học!
+          
+          <br>Ngoài ra, Arena liên tục tổ chức các buổi workshop, nói chuyện  chuyên đề bởi các chuyên gia hàng đầu đang làm việc trong lĩnh vực Multimedia. Các buổi sinh hoạt nhóm (CLB nhiếp ảnh, CLB thiết kế, CLB film, CLB 3D & Animation,…) và các cuộc thi sáng tạo tạo ra môi trường sinh hoạt “nghề” sôi động, giúp học viên cọ xát thực tế và nắm bắt nhanh các kỹ năng làm việc. Việc được thường xuyên tiếp xúc với các chuyên gia đang hoạt động trong nghề giúp học viên cập nhật được những tiêu chí nghề nghiệp và có cái nhìn thực tiễn nhất về công việc.
+          
+          <br>Một số hội thảo được Arena Multimedia tổ chức như: Hội thảo 3D Animation hình dáng của tương lai, Nghề nghiệp Freelance Now, Tôi làm phim,… Những buổi hội thảo này đều cung cấp cho học viên những kiến thức rất bổ ích, có lợi cho ngành nghề đang theo học.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Một số cơ sở đào tạo cam kết 100% có việc làm và nếu không thì sẽ trả lại 100% học phí. Vậy cam kết việc làm ở Arena Multimedia sẽ ở mức độ nào?</h2></summary>
+        <p>Những trường ĐH hàng đầu trên thế giới như ĐH Harvard (Mỹ) cũng không có những cam kết như vậy, nên có thể coi những “cam kết 100%” là cam kết tuyệt vọng. Tại Arena Multimedia, thông qua bộ phận Hỗ trợ việc làm, chúng tôi triển khai một loạt các hoạt động để hỗ trợ học viên và doanh nghiệp tuyển dụng tìm được nhau, giới thiệu việc làm miễn phí cho sinh viên trong quy trình đào tạo khép kín của mình.
+
+          <br>Trong quá trình học: Sinh viên được thực tập tại các công ty, tham gia các buổi nói chuyện về công nghệ và cơ hội việc làm, tham gia vào các dự án thực tế.
+          
+          <br>Trước khi tốt nghiệp: Bộ phận Giới thiệu việc làm sẽ hướng dẫn lập hồ sơ, lập tổ chức các khóa học bổ sung về kỹ năng mềm (soft skills), kỹ năng phỏng vấn, lập CD và brochure giới thiệu bản thân, và căn cứ trên nguyện vọng của sinh viên để tiến hành chọn lựa, giới thiệu những công việc phù hợp nhất.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Có phải Arena Multimedia dành cho các đối tượng trượt đại học không?</h2></summary>
+        <p>Arena Multimedia không phân biệt đối tượng học. Các khóa học tại ARENA thường dành cho 3 nhóm đối tượng sau:
+
+          <br>– Học sinh tốt nghiệp lớp 12, muốn học nghề, mong muốn xây dựng sự nghiệp của mình trong lĩnh vực Mỹ thuật Đa phương tiện nói riêng, Công nghệ Thông tin nói chung. Nhóm này chiếm khoảng 40% số học viên hiện tại.
+          
+          <br>– Sinh viên các trường đại học, muốn nâng cao năng lực, bổ trợ kỹ năng làm việc thực tế hoặc “bẻ lái” từ các ngành học khác sau khi phát hiện mình không phù hợp hoặc không tìm thấy sự đam mê khi học các ngành đó. Nhóm này chiếm 40% tiếp theo.
+          
+          <br>– Nhân viên Thiết kế ở các công ty, nhân viên đang làm trong các lĩnh vực Truyền thông, Marketing, hay các công việc văn phòng, các nhà quản lý và các chuyên gia muốn cập nhật và nâng cao kiến thức/ kỹ năng về công nghệ mới.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Tại Arena Multimedia có phương án xét điểm tốt nghiệp THPT quốc gia hay các phương thức xét tuyển khác không?</h2></summary>
+        <p>Kỳ thi THPT quốc gia không có các môn liên quan đến đánh giá năng khiếu (thẩm mỹ, hội hoạ) và sự sáng tạo của thí sinh nên Arena Multimedia không lấy đó làm cơ sở xét tuyển.
+
+          <br>Arena Multimedia tuyển sinh thông qua hình thức 
+          
+          <br>Cách 1: Thi tuyển trực tuyến
+          
+          <br>Vòng 1: Thí sinh làm bài thi sáng tạo online trong 12h
+          <br>Vòng 2: Phỏng vấn với chuyên gia
+          <br>5 thí sinh có điểm thi cao nhất và đạt trên 38 điểm vòng thi Sáng Tạo sẽ nhận được cuộc hẹn phỏng vấn với Giám đốc Đào tạo của Arena Multimedia qua Video Call để được tham gia xét giải quà tặng cao nhất.
+          
+          <br>Cách 2: Thi tuyển trực tiếp
+          
+          <br>Thí sinh thi đầu vào môn Sáng tạo tại các cơ sở của Arena Multimedia (TP.HCM và Hà Nội)
+          
+          <br>Điểm đạt là 20 điểm trở lên. Các thí sinh đủ điểm sẽ vào học ngay.
+          
+          <br>Cách 3: Xét tuyển Portfolio
+          
+          <br>Các thí sinh có thể gửi sản phẩm cá nhân/ portfolio (Vẽ tay, Video clip, Nhiếp ảnh, Thiết kế, …) để xét tuyển trực tiếp.
+          
+          <br>Bạn có thể xem thêm đề thi mẫu tại đây nhé </p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Tại sao nói Arena là chương trình đào tạo Multimedia tiên tiến của châu Á?</h2></summary>
+        <p>Chương trình ưu tú của Arena hiện nay đã vươn ra ngoài phạm vi châu Á. Hiện tại Arena có mặt ở 20 quốc gia trên toàn cầu với hơn 300 trung tâm đào tạo. Arena Multimedia là một nhánh đào tạo quan trọng của tập đoàn đào tạo Công nghệ Thông tin Aptech Ấn Độ, đất nước được đánh giá là phát triển mạnh nhất châu Á về Công nghệ Thông tin.
+
+          <br>Từ khi ra đời, Arena có được sự ủng hộ rộng lớn. Đáp ứng nhu cầu công nghệ trong lĩnh vực mỹ thuật, giải trí, Arena trở thành đơn vị tiên phong trong đào tạo Multimedia. Sau hơn 10 năm, Arena nổi tiếng toàn châu Á về việc chuyên đào tạo các chuyên gia cho lĩnh vực Multimedia. Chính vì vậy Arena Multimedia đã được chọn để hợp tác chuyển giao chương trình đào tạo cho sinh viên Việt Nam.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Sự lựa chọn nghề nghiệp cho sinh viên Mỹ thuật Đa phương tiện là gì?</h2></summary>
+        <p>Học viên tốt nghiệp Arena có thể chọn lựa ngành từ nhiều lĩnh vực bao gồm: Dựng hình 3D, Người vẽ Phim hoạt hình, Chuyên gia sáng tạo VFX, Nhà Thiết kế nhân vật và Thiết kế Games và hầu hết là trong lĩnh vực hấp dẫn như Phim ảnh, Video âm nhạc, Quảng cáo, Thiết kế games.
+          <br>Ngoài ra, tại Arena Multimedia với Bộ phận hỗ trợ việc làm học viên (Arena Placement Service) không ngừng khẳng định là chỗ dựa vững chắc cho học viên “ra cửa gặp việc” trong từng năm, thông qua việc kết hợp hài hòa giữa “Cải thiện nguồn nhân lực chất lượng” và “Kết nối nguồn việc làm uy tín”.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Học xong có được nghề gì?</h2></summary>
+        <p>– Nghề nghiệp trong lĩnh vực đồ họa nội dung số: Graphic Designer (Nhà thiết kế), Illustrator (Họa sĩ Minh họa), Photo Editor (Chuyên gia xử lý ảnh), Layout 3D Animators (Chuyên gia hiệu ứng 3D), Sketch Artists (Họa sĩ phác thảo).
+
+         <br> – Lĩnh vực phim ảnh: Storyboard Artists (Nghệ sĩ kịch bản phân cảnh), Film Editor (Biên tập phim), Record Artists (Thu âm), Sound Technicians (Chuyên gia âm thanh), Special FxSupervisors (Chuyên gia kỹ xảo hình ảnh).
+          
+         <br> – Lĩnh vực thiết kế Web và Games: Web Page Designer (Nhà thiết kế web), Game Developer (Phát triển games).</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Xây dựng trò chơi trên máy tính là một phần của ngành Công nghiệp Đa Phương tiện có đúng không?</h2></summary>
+        <p>Đúng vậy. Mỹ thuật Đa phương tiện bao gồm thiết kế nhân vật, dựng hình 3D và hoạt hình. Thế giới game của thế kỉ 21 sử dụng các công cụ Mỹ thuật Đa phương tiện nhạy bén nhằm tạo cho thế giới game gần gũi với cuộc sống và người sử dụng.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Học ở Arena có được hoãn nghĩa vụ quân sự không?</h2></summary>
+        <p>Sinh viên Arena cũng như những người trẻ trên toàn quốc chấp hành luật Nghĩa vụ Quân sự. Bạn sẽ được trường cấp giấy chứng nhận là sinh viên để có thể làm thủ tục xin tạm hoãn nghĩa vụ quân sự. Quyền quyết định cuối cùng sẽ thuộc về Ban Chỉ huy Quân sự phường / xã / địa phương nơi bạn sinh sống.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Nếu muốn đi học tiếp Đại học ở nước ngoài thì có được không?</h2></summary>
+        <p>Sau 2 năm học tại Arena, sinh viên có thể liên thông với các trường ĐH quốc tế khi chỉ cần học thêm 1,5 – 2 năm tại trường Đại học Middlesex (Anh Quốc), Đại học Cesine (Tây Ban Nha), Centre for Entertainment Arts (Canada), Đại học Lincoln (Malaysia)… để lấy bằng Cử nhân Mỹ thuật Đa phương tiện (Bachelor in Multimedia).</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Sinh viên được cấp bằng gì?</h2></summary>
+        <p>Bằng cấp của Arena Multimedia có giá trị trên 20 quốc gia và được công nhận rộng rãi trên toàn thế giới
+
+          <br>– Bằng Advanced Diploma in Graphic Design & Interactive Media (GDIM): sau khi học hết 4 học kỳ về Thiết kế 2D, thiết kế App, Website, phim kỹ thuật số.
+          
+          <br>– Bằng Advanced Diploma in 3D Animation & Game Art và bằng Advanced Diploma in Visual Effects for Animation & Film: sau khi học hết 4 học kỳ về Kỹ xảo VFX – 3D – Game</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Bằng được cấp sau khi học Arena có giá trị gì?</h2></summary>
+        <p>Arena Multimedia là thương hiệu nhượng quyền toàn cầu của tập đoàn Aptech (Ấn Độ). Bằng cấp của Arena Multimedia do tập đoàn Aptech cấp, gửi về Việt Nam.
+          <br>Bằng cấp này hiện nay được công nhận bởi các công ty quảng cáo, công ty thiết kế, sản xuất games, đài truyền hình của 15 quốc gia mà Arena Multimedia có sự hiện diện, đặc biệt được đánh giá cao khi làm việc tại các công ty đa quốc gia như Gameloft, Digital Works, Sparx*, Magnon, GlassEgg, …
+          <br>Học viên Arena cũng có thể sử dụng bằng để tiếp tục học liên thông tại các trường Đại học Quốc tế.
+          <br>Bằng tốt nghiệp 2 năm có giá trị tự chuyển đổi và liên thông với một số trường Đại học tại Úc, Singapore, Anh Quốc, Tây Ban Nha, Canada và New Zealand,… để có thể học tiếp 1,5 – 2 năm lấy bằng Cử nhân Mỹ thuật Đa phương tiện (Bachelor in Multimedia)</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Em không có năng khiếu mỹ thuật, vậy em có thể sử dụng các công cụ học được để thành công trong lĩnh vực đồ học hay không?</h2></summary>
+        <p>Arena trang bị cho bạn các công cụ thể hiện ý tưởng sáng tạo. Bạn sáng tạo hơn bạn nghĩ đấy, chẳng qua bạn chưa có đầy đủ các công cụ hỗ trợ mà thôi. Khi đến với Arena, chúng tôi sẽ xem bạn có năng khiếu mỹ thuật hay không qua kỳ thi test đầu vào.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Học phí tại Arena là bao nhiêu?</h2></summary>
+        <p>Mức học phí sẽ phụ thuộc vào chương trình học và hình thức đóng. Hình thức đóng học phí có 3 cách. Xem chi tiết tại <a href = "hoc_phi.html">Học phí của Arena.</a></p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Nếu đang học mà muốn đổi giờ học thì có được không?</h2></summary>
+        <p>Trong một năm học, mỗi sinh viên có thể yêu cầu đổi giờ học tối đa 2 lần nhưng phải được sự đồng ý và tuân theo sắp xếp của các cơ sở.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Có phải chương trình luôn đảm bảo đào tạo những công nghệ mới nhất?</h2></summary>
+        <p>Đúng vậy. Arena tin rằng không chỉ hướng sinh viên đến những công nghệ mới nhất của lĩnh vực Multimedia, mà còn trang bị một cái nhìn tiên quyết trước tương lai. Chúng tôi kiên định trong việc nắm bắt xu hướng phát triển của công nghệ. Quan hệ hợp tác giữa ArenaMultimedia với Adobe, AutoDesk và các hãng công nghệ khác cho phép bộ phận R&D nắm được các công nghệ mới nhất và cập nhật vào chương trình đào tạo.</p>
+       </details> 
+       
+       <details>
+        <summary class= "detai"><h2>Có thể theo học được không nếu chưa có máy tính ở nhà?</h2></summary>
+        <p>Chắc chắn, có được một máy tính riêng là rất tốt. Tuy nhiên, bạn vẫn có thể theo học chương trình bởi vì chương trình cung cấp cho bạn thời gian đủ cần thiết cho việc thực hành trên máy chính nhờ phương pháp đào tạo tập trung vào thực hành ở Arena Multimedia (Practical Oriented). </p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Làm sao để xác định được tôi có theo học được ngành này không, có phù hợp với khả năng của mình?</h2></summary>
+        <p>Tư vấn của các trung tâm sẽ giúp sinh viên tương lai xác định điều này và bài thi đầu vào cũng chính là một minh chứng khả năng của bạn. Arena Multimedia sẽ tổ chức kiểm tra đầu vào hai nội dung: Tiếng Anh – để đọc hiểu tài liệu học tập bằng tiếng Anh và môn thi Sáng tạo để kiểm tra về sự tư duy, khả năng cảm nhận mỹ thuật của bạn. </p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Học Mỹ thuật Đa phương tiện cần có những yêu cầu đặc biệt gì?</h2></summary>
+        <p>Với ngành Mỹ thuật đa phương tiện thì sẽ không có yêu cầu đặc biệt nào. Điều quan trọng nhất là bạn phải thích cái đẹp, thích làm đẹp cho cuộc sống, thay đổi thế giới xung quanh bạn trở nên đẹp đẽ hơn. Bạn có gu thẩm mỹ và tinh thần say mê sáng tạo, khả năng tưởng tượng, khao khát được thể hiện bản thân. Với tinh thần học hỏi nghiêm túc, bạn hoàn toàn có thể trở thành chuyên gia trong lĩnh vực Multimedia.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Sinh viên có được giới thiệu việc làm sau khi tốt nghiệp?</h2></summary>
+        <p>Bạn yên tâm nhé, tại Arena Multimedia với Bộ phận hỗ trợ việc làm học viên (Arena Placement Service) không ngừng khẳng định là chỗ dựa vững chắc cho học viên “ra cửa gặp việc” trong từng năm, thông qua việc kết hợp hài hòa giữa “Cải thiện nguồn nhân lực chất lượng” và “Kết nối nguồn việc làm uy tín”. Đây là một kênh hỗ trợ tuyển dụng đắc lực mà Arena Multimedia đã tạo ra để giúp các bạn sinh viên Arena có thể kết nối trực tiếp với các nhà tuyển dụng nhanh nhất.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Học phí ở Arena có quá cao không?</h2></summary>
+        <p>Học phí ở Arena không hề cao so với những lợi ích của khóa học mang lại. Theo thống kê từ bộ phận giới thiệu việc làm của chúng tôi, mức lương trung bình của một người làm trong lĩnh vực Mỹ thuật Đa phương tiện giao động từ 9 đến 15 triệu/tháng, trong thực tế có thể nhiều hơn con số đó.
+          Ngoài ra khi học tập tại Arena Multimedia, các bạn còn được hỗ trợ về các trang thiết bị học tập, cơ sở vật chất để có môi trường học tập tốt nhất.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Chuyên gia Mỹ thuật Đa phương tiện khác Lập trình viên như thế nào?</h2></summary>
+        <p>Mỹ thuật Đa phương tiện là một lĩnh vực mang tính sáng tạo, là sự kết hợp hoàn hảo giữa Công nghệ (sử dụng các phần mềm Multimedia hiện đại để thiết kế, làm kỹ xảo) và Nghệ thuật (sử dụng khả năng thẩm mỹ và cảm nhận mỹ thuật, cái đẹp để thể hiện vào trong các sản phẩm thiết kế), trong khi đó lập trình viên là một lĩnh vực thể hiện sự tư duy logic. Lập trình viên phải tuân theo các quy luật và tiến trình đã định sẵn, ngược lại với Mỹ thuật Đa phương tiện bạn sẽ được tự do trong khả năng sáng tạo của mình. </p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Bao nhiêu điểm thì bạn trúng tuyển vào Arena Multimedia?</h2></summary>
+        <p>Rất dễ dàng, nếu bạn là học sinh phổ thông trung học yêu thích sự sáng tạo, ham học hỏi, thích môi trường năng động. Để kiểm tra khả năng, bạn sẽ tham gia làm bài thi Sáng tạo để xét đầu vào Arena Multimedia. Điểm Sáng tạo phải đạt đạt 20 điểm trở lên.
+          <br>Ngoài ra nếu bạn là sinh viên hoặc đang đi làm thì với hình thức nộp Porfolio (các sản phẩm nhiếp ảnh, vẽ tay, edit video..) để trở thành sinh viên của Arena nhé.</p>
+       </details> 
+
+       <details>
+        <summary class= "detai"><h2>Học Arena có khác gì so với học Đại học không?</h2></summary>
+        <p>Arena Multimedia cung cấp chương trình đào tạo cập nhật và toàn diện, bao quát tất cả các lĩnh vực của Mỹ thuật Đa phương tiện, bám sát các ứng dụng thực tế và yêu cầu thiết yếu của ngành công nghiệp sáng tạo và giải trí.
+
+          <br>Đặc thù của đào tạo Thiết kế là tính ứng dụng thực tế và hàm lượng thực hành cao của chương trình học cũng như phương pháp đào tạo. Chương trình đào tạo tại Arena Multimedia được triển khai với 25% lý thuyết, 75% thực hành trong thời gian 2 năm giúp cho học viên tiết kiệm thời gian học tập nhưng vẫn tiếp thu trọn vẹn được các kiến thức kỹ năng toàn diện để đáp ứng cho thị trường làm việc sau này.
+          <br>24 tháng và trải qua 4 đồ án cuối kỳ sẽ giúp học viên Arena đi qua tất cả những thách thức toàn diện nhất của lĩnh vực Truyền thông Đa phương tiện, giúp họ có lợi thế cạnh tranh đặc biệt trong giới làm nghề.
+          
+          <br>Môi trường học tập sáng tạo, năng động, chuyên nghiệp, chuẩn Quốc tế, thường xuyên được tiếp xúc với các chuyên gia có tiếng trong nghề cũng là những điểm được học viên Arena yêu thích.</p>
+       </details> 
 
     </div>
-
+ 
+    <div class = "bg-footer">
+      <div class="row">
+        <div class="col-12 bottom-line">
+          <h1>HỆ THỐNG ĐÀO TẠO MỸ THUẬT ARENA MULTIMEDIA</h1>
+        </div>
+        <div class="col-3">
+          <h2>TP.HCM</h2>
+        </div>
+      </div>
+  
+      <div class="row" style = " margin-top: -32px;">
+        <div class="col-3">
+          <h3>Arena Nguyễn Đình Chiểu</h3>
+          <p>212-214 Nguyễn Đình Chiểu, Phường Xuân Hoà</p>
+          <p>Tel: 1800 1525</p>
+          <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Hồ Văn Huê</h3>
+          <p>43R/12 Hồ Văn Huê, Phường Đức Nhuận</P>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Tân Bình</h3>
+          <p>Số 6 Tân Kỳ Tân Quý (gần Etown), Phường Tân Bình</p>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Phú Lâm</h3>
+          <p>136 Lê Tuấn Mậu (CV Phú Lâm), Phường Phú Lâm</p>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+      </div>
+  
+      <div class = "col-12">
+        <h2>Hà Nội</h2>
+      </div>
+  
+      <div class = "row">
+  
+      <div class="row" style = " margin-top: -32px;">
+        <div class="col-3">
+          <h3>Arena Đống Đa</h3>
+          <p>39-41 Vũ Ngọc Phan, Phường Láng</p>
+          <p>Tel: 1800 1525</p>
+          <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Cầu Giấy</h3>
+          <p>D29 Phạm Văn Bạch, Phường Cầu Giấy</p>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Hà Đông</h3>
+          <p>110 Trần Phú, Phường Hà Đông</p>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-3">
+          <h3>Arena Long Biên</h3>
+          <p>564 Nguyễn Văn Cừ, Phường Bồ Đề</p>
+            <p>Tel: 1800 1525</p>
+            <p>Email: arena@aprotrain.com</p>
+        </div>
+        <div class="col-12 bottom-line">
+          &nbsp; <!--dùng để tạo khoảng trắng-->
+      </div>
+  
+      <div class="row" style = "margin-top: -32px;">
+        <div class="col-12">
+          <h2>© 2020, ARENA MULTIMEDIA</h2>
+        </div>
+      </div>
+  
+  </div>
+    
+  
+  
+  
+  
+  
+  </body>
+  </html>
+    
   
